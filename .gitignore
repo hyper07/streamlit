@@ -1,5 +1,7 @@
 
 .DS_Store
-app/.DS_Store
-/ollama/ollama-webui
-/ollama/ollama
+**/.DS_Store
+/ollama/ollama-webui/*
+/ollama/ollama/*
+/ollama/code/*
+files/data/*
