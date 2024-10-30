@@ -43,7 +43,7 @@ services:
         environment: # https://docs.openwebui.com/getting-started/env-configuration#default_models
             - OLLAMA_BASE_URLS=http://host.docker.internal:27869 #comma separated ollama hosts
             - ENV=dev
-            - WEBUI_AUTH=False
+            - WEBUI_AUTH=True
             - WEBUI_NAME=HYPER AI
             - WEBUI_URL=http://localhost:28080
             - WEBUI_SECRET_KEY=t0p-s3cr3t
