@@ -10,7 +10,8 @@ ENV PYTHONUNBUFFERED 1
 COPY ./requirements.txt /usr/src/app/requirements.txt
 COPY ./requirements-dev.txt /usr/src/app/requirements-dev.txt
 
-RUN apt-get update && apt-get install libgomp1
+# RUN apt-get update && apt-get install -y libgomp1 libglib2.0-0
+RUN apt-get update && apt-get install -y libgl1 libgomp1 libglib2.0-0
 
 # dependencies
 RUN pip install --upgrade pip setuptools wheel \
