@@ -23,7 +23,7 @@ import streamlit as st
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 import pandas as pd
 
-llm = Ollama(model="gemma2", base_url="http://host.docker.internal:27869", verbose=True)
+llm = Ollama(model="deepseek-r1:14b", base_url="http://host.docker.internal:27869", verbose=True)
 
 sample_file_path = ''
 columns = []
